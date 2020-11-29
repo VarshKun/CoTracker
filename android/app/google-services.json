@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "355668389482",
+    "firebase_url": "https://login-hack.firebaseio.com",
+    "project_id": "login-hack",
+    "storage_bucket": "login-hack.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:355668389482:android:6e7931b451611cc46fa413",
+        "android_client_info": {
+          "package_name": "com.zenva.login_page"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "355668389482-eq391nkg4fk62o9935pqq1thf4b8bvkb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zenva.login_page",
+            "certificate_hash": "8616397c76c987ecd4a598fb3278966401f02fe6"
+          }
+        },
+        {
+          "client_id": "355668389482-r566pnkd1k4nqmrkp2pabe9m77nm5gfu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBz8SPl8wWDnNWZFSipsCKWa-xtx82gPQg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "355668389482-r566pnkd1k4nqmrkp2pabe9m77nm5gfu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
