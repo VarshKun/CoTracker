@@ -1,0 +1,55 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget{
+  @override
+  Widget build(BuildContext context){
+    return MaterialApp(
+      title : "CO-TRACKER 1",
+      home: Home(),
+
+
+    );
+  }
+}
+class Home extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(backgroundColor: Colors.lightGreen,
+          title: Text("CO-TRACKER",style: TextStyle(fontWeight: FontWeight.w100),),
+          centerTitle: true,
+          leading: new Icon(Icons.access_alarm_outlined, color: Colors.brown,)
+          ,
+          actions: <Widget>[
+            IconButton(icon: Icon(Icons.bar_chart_rounded), onPressed: () {
+              print("menu");
+            },
+            ),
+            IconButton(icon: Icon(Icons.account_circle),onPressed:(){print("search");}),
+
+          ]
+      ),
+     body: Padding(padding: EdgeInsets.all(30.0),
+        child: Text("Terms and Conditions", style: TextStyle(fontSize: 24.0,fontStyle: FontStyle.italic,fontWeight: FontWeight.w200,color: Colors.black87))
+       
+     ),
+
+floatingActionButton: FloatingActionButton.extended(icon: Icon(Icons.arrow_forward,color: Colors.amber,),
+label: Text("I AGREE"),
+elevation: 10,
+highlightElevation: 30,
+foregroundColor: Colors.white,
+backgroundColor: Colors.green,
+onPressed: (){print("forward");},),
+
+
+
+
+      );
+
+  }
+}
