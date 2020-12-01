@@ -1,90 +1,99 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: Login()
+    home:Udetails()
   ));
 }
-
-  class Login  extends StatefulWidget {
+class Udetails extends StatefulWidget {
   @override
-  _LoginState createState() => _LoginState();
+  _UdetailsState createState() => _UdetailsState();
 }
 
-class _LoginState extends State<Login> {
-    @override
-    Widget build(BuildContext context) {
-      return  Scaffold(
-        appBar: AppBar(
-          title: Text('LOGIN'),
-          centerTitle: true,
-          backgroundColor: Colors.black45,
-          elevation: 0.0,
+class _UdetailsState extends State<Udetails> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body:Padding(
+        padding: EdgeInsets.fromLTRB(30.0, 40.0, 30.0, 0.0),
+        child:Column(
+          children:<Widget>[
+         Container(
+          child:Text('NAME',
+            style:TextStyle(
+                fontSize: 20.0,
+                fontWeight: FontWeight.bold,
+                letterSpacing: 1.0,
+                color: Colors.black
+          ),
         ),
-        body: Padding(
-          padding: EdgeInsets.fromLTRB(30.0, 40.0, 30.0, 0.0),
-          child:Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            Container(
-            // margin:EdgeInsets.fromLTRB(0.0,40.0, 0.0,0.0),
-             padding:EdgeInsets.all(10.0),
-              color: Colors.black45,
-             child: Text(
-            'USERNAME',
-            style: TextStyle(
-              fontSize: 20.0,
-              fontWeight: FontWeight.bold,
-              letterSpacing: 1.0,
-              color: Colors.black,
-
+        ),
+            TextFormField(
+              decoration: InputDecoration(
+                  labelText: 'Enter your name'
+              ),
             ),
-          ),
-         ),
-           TextFormField(
-            decoration: InputDecoration(
-                labelText: 'Enter your username'
-            ),
-          ),
-
             Container(
-              margin:EdgeInsets.fromLTRB(0.0,40.0, 0.0,0.0),
-              padding:EdgeInsets.all(10.0),
-              color: Colors.black45,
-              child: Text(
-                'PASSWORD',
-                style: TextStyle(
-                  fontSize: 20.0,
-                  fontWeight: FontWeight.bold,
-                  letterSpacing: 1.0,
-                  color: Colors.black,
+              child:Text('AGE',
+                style:TextStyle(
+                    fontSize: 20.0,
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: 1.0,
+                    color: Colors.black
                 ),
               ),
             ),
             TextFormField(
               decoration: InputDecoration(
-                  labelText: 'Enter your password'
+                  labelText: 'Enter your Age'
               ),
             ),
-             SizedBox(height: 20.0),
-             FlatButton(
-              onPressed: () {},
-                color: Colors.black45,
-              child: Text('Login')
-           ),
 
-      ],
-         ),
+            Container(
+              child:Text('How many people are there in your family?',
+                style:TextStyle(
+                    fontSize: 20.0,
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: 1.0,
+                    color: Colors.black
+                ),
+              ),
+            ),
+            TextFormField(
+              decoration: InputDecoration(
+                  labelText: 'No of members'
+              ),
+            ),
+            Container(
+              child:Text('AGE',
+                style:TextStyle(
+                    fontSize: 20.0,
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: 1.0,
+                    color: Colors.black
+                ),
+              ),
+            ),
+            TextFormField(
+              decoration: InputDecoration(
+                  labelText: 'Enter your Age'
+              ),
+            ),
+           FlatButton(
+             color:Colors.black45,
+             onPressed:(){},
+             child: Text('Next'),
 
-        )
-      );
-    }
+
+           )
+
+
+          ],
+        ),
+        ),
+    );
+  }
 }
-
-
-
-
 
 
 
